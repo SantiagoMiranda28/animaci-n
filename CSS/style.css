@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.rotating-image {
+    width: 100px;
+    height: 100px;
+    animation-name: mianimación;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mianimación {
+    0% {height: 100px; width: 100px;}
+    50% {height: 400px; width: 400px;}
+    100% {height: 200px; width: 200px;}
+}
+
+#Cuadrado {
+    width: 200px;
+    height: 200px;
+    background: red;
+    animation-name: animación;
+    animation-duration: 10s;
+    position: relative; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animación {
+    0% { background: green; left: 0; top: 0px; }
+    50% { background: blue; left: 300px; top: 0px; }
+    75% { background: pink; left: 300px; top: 300px; }
+    100% { background: black; left: 0; top: 0px; }
+}
